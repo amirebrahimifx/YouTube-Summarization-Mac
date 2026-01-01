@@ -1,8 +1,8 @@
-#YouTube Transcript → AI Summary (Raycast)
+# YouTube Transcript → AI Summary (Raycast)
 
 A Raycast Script Command that reads a YouTube URL from your clipboard, fetches the video title, extracts the best available transcript (YouTube captions first, Apify fallback), sends it to OpenRouter (Groq-first) for a fast structured summary/Q&A, then copies the result to your clipboard.
 
-What it does
+# What it does
 	•	Validates clipboard contains a YouTube URL
 	•	Fetches YouTube title automatically
 	•	Transcript extraction:
@@ -24,7 +24,7 @@ Requirements
 	•	OpenRouter API key (required)
 	•	Apify token (optional but recommended)
 
-#Setup
+# Setup
 
 1) Save keys in Keychain
 
@@ -53,7 +53,3 @@ Optional: pass a question as the script argument to do transcript-based Q&A inst
 Notes
 	•	Some videos have no captions; Apify may return empty in that case (the script prints debug info).
 	•	Keep API keys in Keychain; do not hardcode them.
-
-License
-
-Add your preferred license (MIT is common).
